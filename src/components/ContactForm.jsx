@@ -1,71 +1,49 @@
 import React from 'react'
 
 export default function ContactForm(){
-  const handleWhatsApp = () => {
-    const message = `Hi! I'm interested in travel packages. Please contact me.`
-    const whatsappUrl = `https://wa.me/919354262859?text=${encodeURIComponent(message)}`
-    window.open(whatsappUrl, '_blank')
-  }
-
-  const handleCall = () => {
-    window.open('tel:+919354262859', '_self')
-  }
-
-  const handleEmail = () => {
-    window.open('mailto:mundoyatra@gmail.com', '_self')
-  }
-
   return (
     <div className="contact-section">
       <div className="contact-info">
-        <h3>📞 Get in Touch</h3>
-        <p>Ready to start your journey? Contact us through any of these channels:</p>
+        <h3>Get in Touch</h3>
+        <p>Ready to start your journey? Contact us through any of these methods and we'll get back to you within 24 hours.</p>
         
         <div className="contact-methods">
-          <button onClick={handleWhatsApp} className="contact-method whatsapp">
+          <a href="https://wa.me/919354262859" target="_blank" rel="noreferrer" className="contact-method whatsapp">
             <span className="icon">📱</span>
             <div>
               <strong>WhatsApp</strong>
-              <span>+91 9354262859</span>
+              <span>Start planning on WhatsApp</span>
             </div>
-          </button>
+          </a>
           
-          <button onClick={handleCall} className="contact-method call">
+          <a href="tel:+919354262859" className="contact-method call">
             <span className="icon">📞</span>
             <div>
               <strong>Call Now</strong>
-              <span>+91 935426262859</span>
+              <span>+91 9354262859</span>
             </div>
-          </button>
+          </a>
           
-          <button onClick={handleEmail} className="contact-method email">
+          <a href="mailto:mundoyatra@gmail.com" className="contact-method email">
             <span className="icon">📧</span>
             <div>
-              <strong>Email</strong>
+              <strong>Email Us</strong>
               <span>mundoyatra@gmail.com</span>
             </div>
-          </button>
-          
-          <div className="contact-method address">
-            <span className="icon">📍</span>
-            <div>
-              <strong>Office</strong>
-              <span>CM Block, Sainik Nagar, Nawada, Delhi, 110059</span>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
-
-      <div className="contact-form card">
-        <h3>📋 Quick Information</h3>
-        <p>Here's what you need to know about our services:</p>
+      
+      <div className="contact-form">
+        <h3>Quick Information</h3>
+        <p>Here's what we offer to make your travel experience exceptional:</p>
         
         <div className="info-grid">
           <div className="info-item">
             <span className="info-icon">✈️</span>
             <div>
               <strong>Flights & Hotels</strong>
-              <span>Best rates guaranteed</span>
+              <span>Best deals worldwide</span>
             </div>
           </div>
           
@@ -73,7 +51,7 @@ export default function ContactForm(){
             <span className="info-icon">🏨</span>
             <div>
               <strong>Luxury Stays</strong>
-              <span>4 & 5 star accommodations</span>
+              <span>Premium accommodations</span>
             </div>
           </div>
           
@@ -81,7 +59,7 @@ export default function ContactForm(){
             <span className="info-icon">🛂</span>
             <div>
               <strong>Visa Services</strong>
-              <span>Fast processing & support</span>
+              <span>Expert assistance</span>
             </div>
           </div>
           
@@ -89,32 +67,16 @@ export default function ContactForm(){
             <span className="info-icon">🚗</span>
             <div>
               <strong>Transportation</strong>
-              <span>AC vehicles with drivers</span>
-            </div>
-          </div>
-          
-          <div className="info-item">
-            <span className="info-icon">👨‍💼</span>
-            <div>
-              <strong>Professional Guides</strong>
-              <span>English speaking experts</span>
-            </div>
-          </div>
-          
-          <div className="info-item">
-            <span className="info-icon">💰</span>
-            <div>
-              <strong>Best Prices</strong>
-              <span>Starting from ₹6,999</span>
+              <span>Reliable travel options</span>
             </div>
           </div>
         </div>
         
         <div className="cta-section">
-          <p className="highlight">Ready to plan your dream vacation?</p>
-          <button onClick={handleWhatsApp} className="btn">
-            📱 Start Planning on WhatsApp
-          </button>
+          <div className="highlight">Ready to start your adventure?</div>
+          <a href="https://wa.me/919354262859" target="_blank" rel="noreferrer" className="btn btn-primary">
+            Start Planning on WhatsApp
+          </a>
         </div>
       </div>
     </div>
