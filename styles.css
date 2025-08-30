@@ -864,9 +864,9 @@ footer {
     gap: 16px;
   }
   
-  .nav-links {
+  /* .nav-links {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
