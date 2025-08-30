@@ -7,7 +7,7 @@ export default function App(){
       <header>
         <nav>
           <div className="logo">
-            <img src="/assets/logo.svg" width="28" height="28" alt="Mundo Yatra logo" />
+            <img src="/mundoyatra/assets/logo.svg" width="28" height="28" alt="Mundo Yatra logo" />
             <span>Mundo Yatra</span>
           </div>
           <ul className="nav-links">

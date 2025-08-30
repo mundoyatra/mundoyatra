@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function PackageCard({title, price, highlights=[], includes=[], cta1="Plan My Trip", cta2="Enquire Now", img="/assets/placeholder-1.jpg"}){
+export default function PackageCard({title, price, highlights=[], includes=[], cta1="Plan My Trip", cta2="Enquire Now", img="/mundoyatra/assets/placeholder-1.jpg"}){
   const [isExpanded, setIsExpanded] = useState(false)
 
   const handlePlanTrip = () => {

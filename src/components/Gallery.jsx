@@ -2,49 +2,49 @@ import React, { useState } from 'react'
 
 const galleryImages = [
   {
-    src: '/assets/gallery-1.jpg',
+    src: '/mundoyatra/assets/gallery-1.jpg',
     alt: 'Beautiful beach destination',
     title: 'Tropical Paradise',
     location: 'Maldives'
   },
   {
-    src: '/assets/gallery-2.jpg',
+    src: '/mundoyatra/assets/gallery-2.jpg',
     alt: 'Mountain landscape',
     title: 'Mountain Adventure',
     location: 'Swiss Alps'
   },
   {
-    src: '/assets/gallery-3.jpg',
+    src: '/mundoyatra/assets/gallery-3.jpg',
     alt: 'City skyline',
     title: 'Urban Exploration',
     location: 'New York'
   },
   {
-    src: '/assets/gallery-4.jpg',
+    src: '/mundoyatra/assets/gallery-4.jpg',
     alt: 'Desert landscape',
     title: 'Desert Safari',
     location: 'Dubai'
   },
   {
-    src: '/assets/gallery-5.jpg',
+    src: '/mundoyatra/assets/gallery-5.jpg',
     alt: 'Forest trail',
     title: 'Nature Walk',
     location: 'Amazon'
   },
   {
-    src: '/assets/gallery-6.jpg',
+    src: '/mundoyatra/assets/gallery-6.jpg',
     alt: 'Historic architecture',
     title: 'Cultural Heritage',
     location: 'Rome'
   },
   {
-    src: '/assets/gallery-7.jpg',
+    src: '/mundoyatra/assets/gallery-7.jpg',
     alt: 'Snowy mountains',
     title: 'Winter Wonderland',
     location: 'Switzerland'
   },
   {
-    src: '/assets/gallery-8.jpg',
+    src: '/mundoyatra/assets/gallery-8.jpg',
     alt: 'Island resort',
     title: 'Island Getaway',
     location: 'Bali'
