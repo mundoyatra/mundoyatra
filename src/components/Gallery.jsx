@@ -93,7 +93,7 @@ export default function Gallery(){
 
       <div className="text-center" style={{marginTop: 40}}>
         <p className="text-muted">Ready to visit these amazing destinations?</p>
-        <button className="btn" onClick={handleWhatsApp}>
+        <button className="btn btn-primary" onClick={handleWhatsApp}>
           🌍 Plan My Trip
         </button>
       </div>
@@ -107,7 +107,7 @@ export default function Gallery(){
               <h3>{selectedImage.title}</h3>
               <p>📍 {selectedImage.location}</p>
               <p>Experience the magic of {selectedImage.title} with our exclusive travel packages!</p>
-              <button className="btn" onClick={handleWhatsApp}>
+              <button className="btn btn-secondary" onClick={handleWhatsApp}>
                 🚀 Book This Destination
               </button>
             </div>
