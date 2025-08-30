@@ -955,3 +955,25 @@ footer {
   color: #2563eb;
   box-shadow: 0 8px 15px -3px rgba(255, 255, 255, 0.3);
 }
+
+/* Navigation Button Styling */
+.nav-links .btn {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-width: auto;
+  text-transform: none;
+  letter-spacing: normal;
+  border-radius: 8px;
+  background: #2563eb;
+  border: 2px solid #2563eb;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.nav-links .btn:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px -1px rgba(37, 99, 235, 0.3);
+}

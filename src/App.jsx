@@ -17,7 +17,7 @@ export default function App(){
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/blog">Blog</NavLink></li>
             <li><NavLink to="/faqs">FAQs</NavLink></li>
-            <li><NavLink to="/contact" className="btn btn-primary">WhatsApp Us</NavLink></li>
+            <li><a href="https://wa.me/919354262859" target="_blank" rel="noreferrer" className="btn btn-primary">WhatsApp Us</a></li>
           </ul>
         </nav>
       </header>

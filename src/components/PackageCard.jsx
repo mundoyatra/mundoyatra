@@ -1,10 +1,17 @@
 import React, { useState } from 'react'
 
-export default function PackageCard({title, price, highlights=[], includes=[], cta1="View Details", cta2="Enquire Now", img="/assets/placeholder-1.jpg"}){
+export default function PackageCard({title, price, highlights=[], includes=[], cta1="Plan My Trip", cta2="Enquire Now", img="/assets/placeholder-1.jpg"}){
   const [isExpanded, setIsExpanded] = useState(false)
 
+  const handlePlanTrip = () => {
+    // Open WhatsApp for planning the trip
+    const message = `Hi! I want to plan a trip to ${title}. Please help me with details and booking.`
+    const whatsappUrl = `https://wa.me/919354262859?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, '_blank')
+  }
+
   const handleEnquire = () => {
-    // Open WhatsApp directly instead of showing popup
+    // Open WhatsApp for enquiry
     const message = `Hi! I'm interested in ${title} package. Please contact me.`
     const whatsappUrl = `https://wa.me/919354262859?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
@@ -49,14 +56,14 @@ export default function PackageCard({title, price, highlights=[], includes=[], c
 
         <div className="actions">
           <button 
-            onClick={() => setIsExpanded(!isExpanded)} 
-            className="btn outline"
+            onClick={handlePlanTrip} 
+            className="btn btn-primary"
           >
-            {isExpanded ? 'Show Less' : 'Show More Details'}
+            {cta1}
           </button>
           <button 
             onClick={handleEnquire} 
-            className="btn"
+            className="btn btn-secondary"
           >
             {cta2}
           </button>
