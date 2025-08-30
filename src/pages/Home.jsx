@@ -10,9 +10,9 @@ export default function Home(){
   return (
     <>
       <Hero />
-      <section style={{marginTop:20}}>
+      <section className="section">
         <h2>Featured Tour Packages</h2>
-        <div className="grid cols-2" style={{marginTop:10}}>
+        <div className="grid grid-2">
           {featured.map((p,i)=> <PackageCard key={i} {...p} />)}
         </div>
       </section>

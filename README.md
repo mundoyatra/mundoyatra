@@ -1,23 +1,91 @@
-# Mundo Yatra — Static React Site (Vite)
+# Mundo Yatra - Travel Agency Website
 
-A static React website for a travel agency. No backend, no APIs, just front-end routes and content.
+A modern, responsive travel agency website built with React and Vite.
 
-## Local Dev
-```bash
-npm install
-npm run dev
+## 🚀 Local Development
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Setup & Run
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Start development server:**
+   ```bash
+   npm run dev
+   ```
+   The website will be available at: http://localhost:5173
+
+3. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+4. **Preview production build:**
+   ```bash
+   npm run preview
+   ```
+   The preview will be available at: http://localhost:4173
+
+## 🌐 Deployment to GitHub Pages
+
+### Automatic Deployment (Recommended)
+1. Push your code to the `main` branch
+2. GitHub Actions will automatically build and deploy to GitHub Pages
+3. The website will be available at: `https://[your-username].github.io/mundoyatra/`
+
+### Manual Deployment
+1. Build the project: `npm run build`
+2. Push the `dist` folder to the `gh-pages` branch
+3. Enable GitHub Pages in your repository settings
+
+## 📁 Project Structure
+```
+src/
+├── components/          # Reusable UI components
+├── pages/              # Page components
+├── data/               # Static data (packages, etc.)
+├── App.jsx             # Main app component
+└── main.jsx            # App entry point
 ```
 
-## Build
-```bash
-npm run build
-npm run preview
-```
+## 🛠️ Technologies Used
+- React 18
+- React Router (HashRouter for GitHub Pages compatibility)
+- Vite (Build tool)
+- CSS3 (Custom styling)
 
-## Deploy to GitHub Pages
-1. Create a **public** GitHub repo, e.g. `mundo-yatra`.
-2. Push this project.
-3. In `vite.config.js`, `base: './'` is set for static hosting.
-4. Build: `npm run build` → upload `dist/` contents to the repo’s **gh-pages** branch or enable Pages to serve from `/root` (for static hosts like Netlify, Vercel just import the repo).
+## 🔧 Configuration
+- **Base Path**: Automatically configured for GitHub Pages (`/mundoyatra/`)
+- **Port**: Development server runs on port 5173
+- **Build Output**: `dist/` directory
 
-> Tip: For GitHub Pages via main branch, you can commit the `dist/` folder and set Pages source to `/root` (if available) or use an action.
+## 📱 Features
+- Responsive design
+- Modern UI/UX
+- Travel package showcase
+- Contact forms
+- Gallery
+- Testimonials
+- FAQ section
+
+## 🚨 Troubleshooting
+
+### Blank Page Issue
+If you see a blank page:
+1. Check browser console for errors
+2. Ensure all dependencies are installed
+3. Verify the build process completes successfully
+4. Check GitHub Pages settings in repository
+
+### Local Development Issues
+1. Make sure Node.js is installed
+2. Clear `node_modules` and reinstall: `rm -rf node_modules && npm install`
+3. Check if ports 5173 or 4173 are available
+
+## 📞 Support
+For any issues or questions, please contact the development team.

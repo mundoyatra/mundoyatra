@@ -6,14 +6,16 @@ const posts = [
 ]
 export default function Blog(){
   return (
-    <section style={{marginTop:20}}>
+    <section className="section">
       <h1>Travel Blog</h1>
-      <div className="grid cols-3" style={{marginTop:10}}>
+      <div className="grid grid-3">
         {posts.map((p,i)=> (
-          <div className="card" key={i}>
-            <div className="kicker">{p.title}</div>
-            <p>{p.excerpt}</p>
-            <button className="btn">Read</button>
+          <div className="package-card" key={i}>
+            <div className="content">
+              <h3>{p.title}</h3>
+              <p>{p.excerpt}</p>
+              <button className="btn btn-primary">Read More</button>
+            </div>
           </div>
         ))}
       </div>

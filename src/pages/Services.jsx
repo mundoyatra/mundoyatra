@@ -11,13 +11,15 @@ const services = [
 
 export default function Services(){
   return (
-    <section style={{marginTop:20}}>
+    <section className="section">
       <h1>Services We Offer</h1>
-      <div className="grid cols-3" style={{marginTop:10}}>
+      <div className="grid grid-3">
         {services.map((s,i)=> (
-          <div className="card" key={i}>
-            <div className="kicker">{s.title}</div>
-            <p style={{marginTop:6}}>{s.desc}</p>
+          <div className="package-card" key={i}>
+            <div className="content">
+              <h3>{s.title}</h3>
+              <p>{s.desc}</p>
+            </div>
           </div>
         ))}
       </div>

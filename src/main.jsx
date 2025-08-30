@@ -1,6 +1,6 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import Home from './pages/Home'
 import Services from './pages/Services'
@@ -9,11 +9,12 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
 import FAQPage from './pages/FAQPage'
+import Gallery from './pages/Gallery'
 import Privacy from './pages/legal/Privacy'
 import Terms from './pages/legal/Terms'
 import Refund from './pages/legal/Refund'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/', element: <App />,
     children: [
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: 'about', element: <About /> },
       { path: 'contact', element: <Contact /> },
       { path: 'blog', element: <Blog /> },
+      { path: 'gallery', element: <Gallery /> },
       { path: 'faqs', element: <FAQPage /> },
       { path: 'privacy', element: <Privacy /> },
       { path: 'terms', element: <Terms /> },
