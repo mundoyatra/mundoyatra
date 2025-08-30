@@ -899,3 +899,59 @@ footer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* Hero Buttons Specific Styling */
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.hero-buttons .btn {
+  min-width: 160px;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.hero-buttons .btn-primary {
+  background: #2563eb;
+  border: 2px solid #2563eb;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
+}
+
+.hero-buttons .btn-primary:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  box-shadow: 0 8px 15px -3px rgba(37, 99, 235, 0.4);
+}
+
+.hero-buttons .btn-secondary {
+  background: #10b981;
+  border: 2px solid #10b981;
+  box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.3);
+}
+
+.hero-buttons .btn-secondary:hover {
+  background: #059669;
+  border-color: #059669;
+  box-shadow: 0 8px 15px -3px rgba(16, 185, 129, 0.4);
+}
+
+.hero-buttons .btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.2);
+}
+
+.hero-buttons .btn-outline:hover {
+  background: white;
+  color: #2563eb;
+  box-shadow: 0 8px 15px -3px rgba(255, 255, 255, 0.3);
+}
