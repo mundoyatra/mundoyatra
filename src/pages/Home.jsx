@@ -12,6 +12,7 @@ export default function Home(){
       <Hero />
       <section className="section">
         <h2>Featured Tour Packages</h2>
+        <p>Ready to visit these amazing destinations? Explore our handpicked travel packages and start planning your next adventure today!</p>
         <div className="grid grid-2">
           {featured.map((p,i)=> <PackageCard key={i} {...p} />)}
         </div>
